@@ -18,7 +18,7 @@
 #     num = num // 10
 # print(count)
 
-# T.C = O(N) ,S.C(1)
+# T.C = O(log10(N)) ,S.C(1)
 
 # Method 3 :--->
 from math import *
