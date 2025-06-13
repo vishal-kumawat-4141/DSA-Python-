@@ -9,19 +9,20 @@
 # print(l)
 
 
-# method -2
-l = [1, 2, 3, 4, 5, 6, 7]
-n = len(l)
-k = 3
-rotation = k % n
-for _ in range(0, rotation):
-    e = l.pop()
-    l.insert(0, e)
-print(l)
+# # method -2
+# l = [1, 2, 3, 4, 5, 6, 7]
+# n = len(l)
+# k = 3
+# rotation = k % n
+# for _ in range(0, rotation):
+#     e = l.pop()
+#     l.insert(0, e)
+# print(l)
 
 
 # mehtod - 3 :--->
 l = [1, 2, 3, 4, 5, 6, 7]
+n = len(l)
 
 
 def reverse_arrary(l, left, right):
@@ -35,3 +36,4 @@ k = 3
 reverse_arrary(l, n - k, n - 1)
 reverse_arrary(l, 0, n - k - 1)
 reverse_arrary(l, 0, n - 1)
+print(l)
