@@ -9,6 +9,5 @@ for i in range(0, rows):
 
 print(Transpose)
 
-# diff = columns - rows
-# result = [[l[j][i] for j in range(0, columns - diff)] for i in range(0, rows + diff)]
+# result = [[l[j][i] for j in range(0, rows)] for i in range(0, columns)]
 # print(result)
