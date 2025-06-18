@@ -53,6 +53,6 @@ for i in range(0, n):
             k -= 1
             while j < k and arr[j] == arr[j - 1]:
                 j += 1
-                while j < k and arr[k] == arr[k + 1]:
-                    k -= 1
+            while j < k and arr[k] == arr[k + 1]:
+                k -= 1
 print(result)
