@@ -22,6 +22,9 @@ def search_ele(nums, target):
         mid = (low + high) // 2
         if nums[mid] == target:
             return True
+        if nums[low] == nums[mid] == nums[high]:
+            low += 1
+            high -= 1
         if nums[mid] <= nums[high]:
             if nums[mid] <= target <= nums[high]:
                 low = mid + 1
@@ -35,5 +38,5 @@ def search_ele(nums, target):
     return False
 
 
-nums = [17, 18, 20, 1, 3, 4, 5, 7, 8, 10, 11, 13, 14, 16]
-print(search_ele(nums, target=101))
+nums = [7, 7, 7, 7, 7, 7, 7, 1, 2, 3, 4, 5, 6, 7]
+print(search_ele(nums, target=2))
