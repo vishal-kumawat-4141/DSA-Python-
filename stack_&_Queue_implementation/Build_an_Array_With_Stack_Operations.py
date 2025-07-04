@@ -9,7 +9,7 @@ class Solution:
         for j in range(target[-1]):
             if s[j] == target[i]:
                 result.append("Push")
-                if i < len(target) - 1:
+                if i < len(target):
                     i += 1
             else:
                 result.append("Push")
@@ -31,7 +31,7 @@ class Solution:
         for j in range(target[-1]):
             if j + 1 == target[i]:
                 result.append("Push")
-                if i < len(target) - 1:
+                if i < len(target):
                     i += 1
             else:
                 result.append("Push")
