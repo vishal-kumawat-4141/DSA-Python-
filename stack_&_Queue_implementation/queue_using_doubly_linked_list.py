@@ -38,13 +38,13 @@ class Queue_using_doubly_linked_list:
 
     def front(self):
         if not self.head:
-            return "stack is empty .."
+            return "Queue is empty .."
         else:
             return self.head.val
 
     def rear(self):
         if not self.head:
-            return "stack is empty .."
+            return "Queue is empty .."
         else:
             return self.tail.val
 
@@ -53,7 +53,7 @@ class Queue_using_doubly_linked_list:
 
     def tarversal(self):
         if not self.head:
-            return "stack is empty"
+            return "Queue is empty"
         else:
             current = self.head
             while current is not None:
