@@ -33,6 +33,7 @@ class Queue_using_doubly_linked_list:
         else:
             x = self.head.val
             self.head = self.head.next
+            self.head = None
             return x
 
     def front(self):
