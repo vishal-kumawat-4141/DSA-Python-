@@ -1,7 +1,7 @@
 # convert the postfix to infix :---> this is start form last and the char between first pop and second pop element
 # T.C = O(N) , S.C = O(N)
 class Solution:
-    def postfix_to_Infix(self, s):
+    def prefix_to_Infix(self, s):
         stack = []
         for char in s[::-1]:
             if char.isalnum():
@@ -15,4 +15,4 @@ class Solution:
 
 
 s1 = Solution()
-print(s1.postfix_to_Infix("*+PQ-MN"))
+print(s1.prefix_to_Infixfix("*+PQ-MN"))
