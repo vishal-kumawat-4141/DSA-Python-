@@ -28,7 +28,7 @@ class Solution:
                 stack.pop()
 
             else:
-                while stack and self.precedence(stack[-1]) >= self.precedence(char):
+                while stack and self.precedence(stack[-1]) > self.precedence(char):
                     result.append(stack.pop())
                 stack.append(char)
 
@@ -39,4 +39,4 @@ class Solution:
 
 
 s1 = Solution()
-print(s1.infix_to_Postfix("a+b*(c^d-e)"))
+print(s1.infix_to_Postfix("(a+b)*c-d+f"))
