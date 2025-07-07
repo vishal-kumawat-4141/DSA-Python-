@@ -1,4 +1,4 @@
-# convert the infix to postfix expresstion:---->
+# convert the infix to pretfix expresstion:---->
 # T.C = O(N)   , S.C = O(N) + O(N)
 
 
@@ -12,7 +12,7 @@ class Solution:
             return 3
         return 0
 
-    def infix_to_Postfix(self, s):
+    def infix_to_prefix(self, s):
         s = s[::-1]  # O(N)
         s = s.replace("(", "temp").replace(")", "(").replace("temp", ")")  # O(N)
         stack = []
@@ -39,4 +39,4 @@ class Solution:
 
 
 s1 = Solution()
-print(s1.infix_to_Postfix("(a+b)*c-d+f"))
+print(s1.infix_to_prefix("(a+b)*c-d+f"))
