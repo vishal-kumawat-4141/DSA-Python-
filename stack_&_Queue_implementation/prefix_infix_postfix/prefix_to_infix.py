@@ -15,4 +15,4 @@ class Solution:
 
 
 s1 = Solution()
-print(s1.prefix_to_Infixfix("*+PQ-MN"))
+print(s1.prefix_to_Infix("*+PQ-MN"))
