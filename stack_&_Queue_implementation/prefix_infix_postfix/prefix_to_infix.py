@@ -1,4 +1,4 @@
-# convert the postfix to infix :---> this is start form last and the char between first pop and second pop element
+# convert the prefix to infix :---> this is start form last and the char between first pop and second pop element
 # T.C = O(N) , S.C = O(N)
 class Solution:
     def prefix_to_Infix(self, s):
